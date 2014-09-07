@@ -1,0 +1,27 @@
+/****************************
+Search
+****************************/
+.text-form{
+	padding-left: 30px;
+}
+.close-position{
+	position:relative;
+ 	top:-25px;
+ 	float: right; 
+ 	padding-right: 10px;
+	color: silver;
+}
+
+.search-position{
+ 	position:relative;
+ 	top:-25px; 
+ 	padding-left: 10px;
+	color: silver;
+}
+/****************************
+User
+****************************/
+.user-image{
+	width: 64px;
+	height: 64px;
+}
