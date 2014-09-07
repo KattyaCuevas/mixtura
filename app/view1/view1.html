@@ -1,1 +1,13 @@
-<p>This is the partial for view 1.</p>
+<div ng-controller="searchController as search">
+
+	<form  name="searchForm" ng-submit="searchForm.$valid && search.searchApi()" novalidate>
+	<input ng-model="search.term" type="text" placeholder='busqueda' required>
+	<input type="submit" value="buscar">
+	</form>
+
+	<div id="results" ng-repeat="video in search.videos">
+	<img ng-src="{{video.snippet.thumbnails['default'].url}}">	
+	<h3>{{video.snippet.title}}</h3>
+	<h5>{{video.snippet.description}}</h5>
+	</div>
+</div>
