@@ -2,8 +2,7 @@
 
 // Declare app level module which depends on views, and components
 var app = angular.module('mixtura', [
-  'ngRoute',
-  'mixtura.search'
+  'ngRoute'
 ]);
 
 app.controller('searchController', ["$http",function($http) {
