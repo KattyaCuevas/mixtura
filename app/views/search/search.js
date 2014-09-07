@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('mixtura.view1', ['ngRoute'])
+angular.module('mixtura.search', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.html',
+  $routeProvider.when('/search', {
+    templateUrl: 'views/search/search.html',
     controller: 'searchController'
   });
 }])
