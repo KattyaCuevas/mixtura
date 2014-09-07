@@ -1,24 +1,11 @@
-<!--User-->
-<div class="col-md-3">
-	<div class="wrapper-user">
-		<div class="media">
-		  	<a class="pull-left" href="#">
-		    <img class="user-image media-object img-circle" src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1392454_592440107475824_605715932_n.jpg?oh=bcfb7431aa66498c1c82a1f8ccf618d2&oe=54A642C2&__gda__=1419004081_dab390974ff898d62bcd2065bd9f01c3" alt="...">
-		  	</a>
-		  	<div class="media-body">
-				<p>@giovannicamana</p>			    
-		 	</div>
-</div>
-	</div>
-</div>
 <!--Search-->
 <div class="col-md-3">
 	<div class="wrapper-search">
   	<div ng-controller="searchController as search">
 
       <form  name="searchForm" ng-submit="searchForm.$valid && search.searchApi()" novalidate>
-      <input ng-model="search.term" type="text" placeholder='busqueda' required>
-      <input type="submit" value="buscar">
+      <input class="form-control" ng-model="search.term"  type="text" placeholder='busqueda' required>
+      
       </form>
 
       <div id="results" ng-repeat="video in search.videos">
@@ -27,13 +14,5 @@
       <h5>{{video.snippet.description}}</h5>
       </div>
     </div>
-	</div>
-</div>
-<!--Show Search-->
-<div class="col-md-6">
-	<div class="wrapper-show">
-		<div class="embed-responsive embed-responsive-4by3">
-  			<iframe class="embed-responsive-item" src="…"></iframe>
-		</div>
 	</div>
 </div>
